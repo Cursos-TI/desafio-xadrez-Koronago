@@ -5,28 +5,36 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+   #include <stdio.h>
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+   int i, casas;
+    
+    // Movimento da Torre (for): 4 casas para cima
+    printf("Movimento da Torre (for):\n");
+    casas = 4;
+    for (i = 1; i <= casas; i++) {
+        printf("Torre move para cima: casa %d\n", i);
+    }
+    printf("\n");
+    
+    // Movimento do Bispo (while): 3 casas na diagonal cima-direita
+    printf("Movimento do Bispo (while):\n");
+    casas = 3;
+    i = 1;
+    while (i <= casas) {
+        printf("Bispo move diagonal para cima-direita: casa %d\n", i);
+        i++;
+    }
+    printf("\n");
+    
+    // Movimento da Rainha (do-while): 5 casas na diagonal baixo-esquerda
+    printf("Movimento da Rainha (do-while):\n");
+    casas = 5;
+    i = 1;
+    do {
+        printf("Rainha move diagonal para baixo-esquerda: casa %d\n", i);
+        i++;
+    } while (i <= casas);
 
     return 0;
 }
